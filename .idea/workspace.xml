@@ -51,6 +51,13 @@
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -61,6 +68,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectId" id="1ZiWbhDCHJS1b0izgIwAP1cxdHa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -173,12 +181,35 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1585322471026" duration="816000" />
+      <workItem from="1585323298243" duration="224000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1368" y="179" key="#Plugins" timestamp="1585323444759">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="179" key="#Plugins/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323444759" />
+    <state x="-1180" y="262" key="FileChooserDialogImpl" timestamp="1585323283342">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="262" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323283342" />
+    <state x="-1151" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585323536177">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1151" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323536177" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585323440104">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323440104" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
