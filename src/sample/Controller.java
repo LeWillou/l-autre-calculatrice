@@ -17,12 +17,21 @@ public class Controller implements Initializable {
     protected List<String> textAreaElements = new ArrayList<String>();
 
     @FXML public Button keyOne, keyTwo, keyThree, keyFour, keyFive, keySix, keySeven, keyEight, keyNine, keyZero, keyPlus, keyMinus, keyMultiply, keyDivide, keyResult;
+    @FXML public Button keyDown, keyUp, keyLeft, keyRight, keyOK;
+    @FXML public Button keyFunction;
     @FXML public TextArea screen;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         screen.setEditable(false);
 
+        keyFunction.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+               textAreaElements.clear();
+               screen.setText("");
+            }
+        });
 
         keyOne.setOnAction(new EventHandler<ActionEvent>() {
             @Override
