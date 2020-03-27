@@ -104,6 +104,61 @@ public class Controller implements Initializable {
             }
         });
 
+        keyPlus.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                textAreaElements.add("+");
+                screen.appendText("+");
+            }
+        });
+        keyMinus.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                textAreaElements.add("-");
+                screen.appendText("-");
+            }
+        });
+        keyMultiply.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                textAreaElements.add("*");
+                screen.appendText("*");
+            }
+        });
+        keyDivide.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                textAreaElements.add("/");
+                screen.appendText("/");
+            }
+        });
+
+
+        keyResult.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                String toAdd = null;
+                int counter = 0;
+                List<String> parsedTextArea = new ArrayList<String>();
+                while(counter < textAreaElements.size()){
+                    if(!textAreaElements.get(counter).matches("\\d+")){
+                        for(int j = 0; j <= counter - 1; j++){
+                            toAdd += textAreaElements.get(j);
+                        }
+                        parsedTextArea.add(toAdd);
+                        toAdd = null;
+                        parsedTextArea.add(textAreaElements.get(counter));
+                        for(int j = 0; j == counter; j++){
+                            textAreaElements.remove(j);
+                        }
+                        counter = 0;
+                    }
+                    else{
+                        counter++;
+                    }
+                }
+            }
+        });
 
     }
 }
