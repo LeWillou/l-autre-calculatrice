@@ -55,6 +55,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -90,6 +91,11 @@
     <property name="dynamic.classpath" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="sample" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -183,7 +189,7 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1585322471026" duration="816000" />
-      <workItem from="1585323298243" duration="2155000" />
+      <workItem from="1585323298243" duration="3704000" />
     </task>
     <servers />
   </component>
@@ -203,22 +209,22 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="262" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323616950" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585326582032">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1585328348392">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585326582032" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1585326582031">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585328348392" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1585328348392">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585326582031" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1585326582030">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585328348392" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1585328348391">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585326582030" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1585326582031">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585328348391" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1585328348392">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585326582031" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585328348392" />
     <state x="-1459" y="163" key="SettingsEditor" timestamp="1585323618111">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
