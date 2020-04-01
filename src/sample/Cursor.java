@@ -12,11 +12,12 @@ public class Cursor {
 	{
 		String tmpText;
 		System.out.println("Move Left");
-		myScreen.selectEnd();
-		tmpText = myScreen.getText(myScreen.getCaretPosition()-2,myScreen.getCaretPosition()-1);
+		myScreen.selectPositionCaret(this.pos);
+		tmpText = myScreen.getText(myScreen.getCaretPosition()-1,myScreen.getCaretPosition());
 		myScreen.deleteText(myScreen.getCaretPosition()-2,myScreen.getCaretPosition());
 		myScreen.appendText("|");
         myScreen.appendText(tmpText);
+        this.pos = myScreen.getCaretPosition()-2;
 		
 	}
 	
@@ -24,15 +25,16 @@ public class Cursor {
 	public void writeAtCursor(TextArea myScreen, List<String> myTextAreaElements, String myText)
 	{
 		myTextAreaElements.add(myText);
-		myScreen.selectEnd();
+		myScreen.selectPositionCaret(this.pos);
 		myScreen.deleteText(myScreen.getCaretPosition()-1,myScreen.getCaretPosition());
         myScreen.appendText(myText);
         myScreen.appendText("|");
+        this.pos++;
 	}
 	
 	public Cursor(TextArea myScreen)
 	{
-		this.pos = 0;
+		this.pos = 1;
 		myScreen.setText("|");
 	}
 }
