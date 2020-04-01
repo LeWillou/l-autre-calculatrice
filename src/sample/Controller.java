@@ -51,93 +51,80 @@ public class Controller implements Initializable {
         keyTwo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("2");
-                screen.appendText("2");
+                myCursor.writeAtCursor(screen,textAreaElements,"2");
             }
         });
         keyThree.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("3");
-                screen.appendText("3");
+                myCursor.writeAtCursor(screen,textAreaElements,"3");
             }
         });
         keyFour.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("4");
-                screen.appendText("4");
+                myCursor.writeAtCursor(screen,textAreaElements,"4");
             }
         });
         keyFive.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("5");
-                screen.appendText("5");
+                myCursor.writeAtCursor(screen,textAreaElements,"5");
             }
         });
         keySix.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("6");
-                screen.appendText("6");
+                myCursor.writeAtCursor(screen,textAreaElements,"6");
             }
         });
         keySeven.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("7");
-                screen.appendText("7");
+                myCursor.writeAtCursor(screen,textAreaElements,"7");
             }
         });
         keyEight.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("8");
-                screen.appendText("8");
+                myCursor.writeAtCursor(screen,textAreaElements,"8");
             }
         });
         keyNine.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("9");
-                screen.appendText("9");
+                myCursor.writeAtCursor(screen,textAreaElements,"9");
             }
         });
         keyZero.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("0");
-                screen.appendText("0");
+                myCursor.writeAtCursor(screen,textAreaElements,"0");
             }
         });
 
         keyPlus.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("+");
-                screen.appendText("+");
+                myCursor.writeAtCursor(screen,textAreaElements,"+");
             }
         });
         keyMinus.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("-");
-                screen.appendText("-");
+                myCursor.writeAtCursor(screen,textAreaElements,"-");
             }
         });
         keyMultiply.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("*");
-                screen.appendText("*");
+                myCursor.writeAtCursor(screen,textAreaElements,"*");
             }
         });
         keyDivide.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add("/");
-                screen.appendText("/");
+                myCursor.writeAtCursor(screen,textAreaElements,"/");
             }
         });
 

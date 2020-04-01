@@ -26,7 +26,7 @@ public class Cursor {
 		myTextAreaElements.add(myText);
 		myScreen.selectEnd();
 		myScreen.deleteText(myScreen.getCaretPosition()-1,myScreen.getCaretPosition());
-        myScreen.appendText("1");
+        myScreen.appendText(myText);
         myScreen.appendText("|");
 	}
 	
