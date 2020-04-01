@@ -14,7 +14,6 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-
     protected List<String> textAreaElements = new ArrayList<String>();
     Iterator<String> myIter = textAreaElements.iterator();
 
@@ -27,6 +26,7 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         screen.setEditable(false);
         Cursor myCursor = new Cursor(screen);
+        textAreaElements.add(" ");
 
         keyFunction.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -145,6 +145,7 @@ public class Controller implements Initializable {
         keyResult.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+                textAreaElements.add(" ");
                 String toAdd = null;
                 int counter = 0;
                 List<String> parsedTextArea = new ArrayList<String>();
