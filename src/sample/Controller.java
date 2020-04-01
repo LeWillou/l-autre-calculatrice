@@ -35,12 +35,17 @@ public class Controller implements Initializable {
                screen.setText("");
             }
         });
-
+        keyLeft.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+               myCursor.moveLeft(screen);
+            }
+        });
+        
         keyOne.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-               textAreaElements.add("1");
-               screen.appendText("1");
+               myCursor.writeAtCursor(screen,textAreaElements,"1");
             }
         });
         keyTwo.setOnAction(new EventHandler<ActionEvent>() {
