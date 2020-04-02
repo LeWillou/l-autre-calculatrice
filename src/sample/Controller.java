@@ -41,6 +41,12 @@ public class Controller implements Initializable {
                myCursor.moveLeft(screen);
             }
         });
+        keyUp.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+               myCursor.testInsert(screen);
+            }
+        });
         
         keyOne.setOnAction(new EventHandler<ActionEvent>() {
             @Override
