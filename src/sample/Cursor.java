@@ -13,10 +13,11 @@ public class Cursor {
 		String tmpText;
 		myScreen.selectPositionCaret(this.pos);
 		tmpText = myScreen.getText(myScreen.getCaretPosition()-2,myScreen.getCaretPosition()-1);
-		System.out.println(tmpText);
+		System.out.println("posCaret = " + myScreen.getCaretPosition() + " valeur = " +tmpText);
 		myScreen.deleteText(myScreen.getCaretPosition()-2,myScreen.getCaretPosition());
-		myScreen.insertText(myScreen.getCaretPosition()-2,"|");
-        myScreen.insertText(myScreen.getCaretPosition()-1,tmpText);
+		System.out.println("After delete, new pos : " + myScreen.getCaretPosition());
+		myScreen.insertText(myScreen.getCaretPosition(),"|");
+        myScreen.insertText(myScreen.getCaretPosition(),tmpText);
         this.pos = this.pos - 1;
 	}
 	
@@ -30,8 +31,8 @@ public class Cursor {
 		myTextAreaElements.add(myText);
 		myScreen.selectPositionCaret(this.pos);
 		myScreen.deleteText(myScreen.getCaretPosition()-1,myScreen.getCaretPosition());
-        myScreen.appendText(myText);
-        myScreen.appendText("|");
+        myScreen.insertText(myScreen.getCaretPosition(),myText);
+        myScreen.insertText(myScreen.getCaretPosition(),"|");
         this.pos++;
 	}
 	
