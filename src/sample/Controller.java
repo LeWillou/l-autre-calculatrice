@@ -50,7 +50,7 @@ public class Controller implements Initializable {
         keyUp.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-               myCursor.testInsert(screen);
+               
             }
         });
         
@@ -144,7 +144,13 @@ public class Controller implements Initializable {
         keyResult.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
-                textAreaElements.add(" ");
+            	String randomText;
+            	while(myIter.hasNext())
+            	{
+            		randomText=myIter.next();
+            		System.out.println(randomText);
+            	}
+                /*textAreaElements.add(" ");
                 String toAdd = null;
                 int counter = 0;
                 List<String> parsedTextArea = new ArrayList<String>();
@@ -164,7 +170,7 @@ public class Controller implements Initializable {
                     else{
                         counter++;
                     }
-                }
+                }*/
             }
         });
 

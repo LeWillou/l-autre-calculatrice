@@ -42,7 +42,9 @@ public class Cursor {
 	public void writeAtCursor(TextArea myScreen, List<String> myTextAreaElements, String myText)
 	{
 		myTextAreaElements.add(myText);
+		
 		myScreen.selectPositionCaret(this.pos);
+		myTextAreaElements.set(this.pos, myText);
 		myScreen.deleteText(myScreen.getCaretPosition()-1,myScreen.getCaretPosition());
         myScreen.insertText(myScreen.getCaretPosition(),myText);
         myScreen.insertText(myScreen.getCaretPosition(),"|");
