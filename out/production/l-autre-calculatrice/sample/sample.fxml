@@ -1,45 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.canvas.Canvas?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 
-<AnchorPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <TextArea fx:id="screen" layoutX="323.0" layoutY="14.0" prefHeight="119.0" prefWidth="456.0" />
-      <Pane layoutX="330.0" layoutY="201.0" prefHeight="386.0" prefWidth="456.0">
-         <children>
-            <Button fx:id="keyOne" layoutX="235.0" layoutY="127.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="1" />
-            <Button fx:id="keyTwo" layoutX="282.0" layoutY="127.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="2" />
-            <Button fx:id="keyThree" layoutX="329.0" layoutY="127.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="3" />
-            <Button fx:id="keyFour" layoutX="235.0" layoutY="173.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="4" />
-            <Button fx:id="keyFive" layoutX="282.0" layoutY="174.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="5" />
-            <Button fx:id="keySix" layoutX="329.0" layoutY="174.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="6" />
-            <Button fx:id="keySeven" layoutX="235.0" layoutY="219.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="7" />
-            <Button fx:id="keyEight" layoutX="282.0" layoutY="219.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="8" />
-            <Button fx:id="keyNine" layoutX="329.0" layoutY="219.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="9" />
-            <Button fx:id="keyZero" layoutX="282.0" layoutY="265.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="38.0" text="0" />
-            <Button fx:id="keyPlus" layoutX="376.0" layoutY="127.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" text="+" />
-            <Button fx:id="keyMinus" layoutX="376.0" layoutY="173.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" text="-" />
-            <Button fx:id="keyMultiply" layoutX="376.0" layoutY="219.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" text="*" />
-            <Button fx:id="keyDivide" layoutX="376.0" layoutY="265.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" text="/" />
-            <Button fx:id="keyResult" layoutX="376.0" layoutY="311.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="66.0" text="Enter" />
-         </children>
-      </Pane>
-      <Pane layoutX="14.0" layoutY="14.0" prefHeight="574.0" prefWidth="143.0">
-         <children>
-            <Button fx:id="keyFunction" layoutX="26.0" layoutY="14.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="92.0" text="Fonctions" />
-         </children>
-      </Pane>
-      <Pane layoutX="172.0" layoutY="14.0" prefHeight="158.0" prefWidth="143.0">
-         <children>
-            <Button fx:id="keyUp" layoutX="39.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" text="^" />
-            <Button fx:id="keyLeft" layoutY="40.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="38.0" text="&lt;" />
-            <Button fx:id="keyDown" layoutX="38.0" layoutY="119.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="66.0" text="v" />
-            <Button fx:id="keyRight" layoutX="105.0" layoutY="40.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="38.0" text="&gt;" />
-            <Button fx:id="keyOK" layoutX="45.0" layoutY="51.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="52.0" text="OK" />
-         </children>
-      </Pane>
+      <TextArea fx:id="equationDisplayer" layoutX="86.0" layoutY="523.0" prefHeight="20.0" prefWidth="552.0" promptText="Type your expression" />
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="574.0" prefWidth="143.0" />
+
+      <TableView fx:id="expressionsTable" layoutX="600.0" layoutY="44.0" prefHeight="452.0" prefWidth="261.0">
+        <columns>
+          <TableColumn prefWidth="260.0" text="Expressions"><cellValueFactory><PropertyValueFactory property="expressionString"/></cellValueFactory></TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="drawExpression" layoutX="679.0" layoutY="529.0" mnemonicParsing="false" text="Draw" />
    </children>
 </AnchorPane>

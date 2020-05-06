@@ -89,7 +89,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="true" />
-    <property name="Repository.Attach.Sources" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
@@ -203,7 +203,7 @@
       <workItem from="1585323298243" duration="8457000" />
       <workItem from="1585746116027" duration="4853000" />
       <workItem from="1588512022129" duration="1877000" />
-      <workItem from="1588766893100" duration="2291000" />
+      <workItem from="1588766893100" duration="7256000" />
     </task>
     <servers />
   </component>
@@ -223,41 +223,44 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="262" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323616950" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1585753774478">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom" timestamp="1588775215268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585330028673" />
-    <state width="1875" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585753774478" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1585753774478">
+    <state width="1875" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588775215268" />
+    <state width="1875" height="281" key="GridCell.Tab.0.center" timestamp="1588775215267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585330028673" />
-    <state width="1875" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585753774478" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1585753774478">
+    <state width="1875" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588775215267" />
+    <state width="1875" height="281" key="GridCell.Tab.0.left" timestamp="1588775215267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585330028672" />
-    <state width="1875" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585753774478" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1585753774478">
+    <state width="1875" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588775215267" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right" timestamp="1588775215268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585330028673" />
-    <state width="1875" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585753774478" />
-    <state x="-1459" y="163" key="SettingsEditor" timestamp="1588767477737">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1875" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588775215268" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1588773130903">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1459" y="163" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588767477737" />
-    <state x="-1235" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588767468585">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588773130903" />
+    <state x="685" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588773130338">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1235" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1588767468585" />
+    <state x="685" y="482" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588773130338" />
     <state x="-1151" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585323659282">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1151" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323659282" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585323440104">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1588772294865">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1585323440104" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1588772294865" />
   </component>
 </project>
