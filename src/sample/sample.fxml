@@ -25,8 +25,8 @@
       </LineChart>
       <TableView fx:id="expressionsTable" id="expressionsTable" layoutX="582.0" layoutY="78.0" prefHeight="367.0" prefWidth="256.0">
         <columns>
-          <TableColumn prefWidth="104.0" text="Function name"><cellValueFactory><PropertyValueFactory property="description" /></cellValueFactory></TableColumn>
-            <TableColumn minWidth="0.0" prefWidth="151.0" text="Expression"><cellValueFactory><PropertyValueFactory property="expressionString" /></cellValueFactory></TableColumn>
+          <TableColumn prefWidth="104.0" text="Function name"><cellValueFactory><PropertyValueFactory property="functionName" /></cellValueFactory></TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="151.0" text="Expression"><cellValueFactory><PropertyValueFactory property="functionExpression" /></cellValueFactory></TableColumn>
         </columns>
       </TableView>
       <Button layoutX="642.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Delete selected row" />

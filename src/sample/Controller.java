@@ -31,18 +31,21 @@ public class Controller implements Initializable {
         Argument x = new Argument("x");
         mXparser.setDegreesMode();
         ArrayList resultsList = new ArrayList();
+        ArrayList expressionsList = new ArrayList();
         drawExpression.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent actionEvent) {
-                Function f = new Function("f", equationDisplayer.getText(), "x");
+                Function f = new Function(equationDisplayer.getText());
                 Expression a = new Expression(equationDisplayer.getText(), x);
-                expressionsTable.getItems().add(a);
+                UserDefinedFunction function = new UserDefinedFunction(f.getFunctionName(), a.getExpressionString());
+                expressionsList.add(function);
+                expressionsTable.getItems().add(function);
                 equationDisplayer.clear();
                 final XYChart.Series<Double, Double> drawFunction = new XYChart.Series<>();
                 int j = 0;
                 double d;
                 for(int i = -200; i <= 200; i++){
-                    Expression e = new Expression("f(" + Integer.toString(i) + ")", f);
+                    Expression e = new Expression(f.getFunctionName() + "(" + Integer.toString(i) + ")", f);
                     resultsList.add(e.calculate());
                     d = i;
                     drawFunction.getData().add(new XYChart.Data<Double, Double>(d, Double.parseDouble(resultsList.get(j).toString())));
