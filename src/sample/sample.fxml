@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.CategoryAxis?>
 <?import javafx.scene.chart.LineChart?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="875.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <TextArea fx:id="equationDisplayer" layoutX="86.0" layoutY="523.0" prefHeight="20.0" prefWidth="552.0" promptText="Type your expression" />
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="574.0" prefWidth="143.0" />
-      <TableView fx:id="expressionsTable" layoutX="600.0" layoutY="44.0" prefHeight="452.0" prefWidth="261.0">
-        <columns>
-          <TableColumn prefWidth="260.0" text="Expressions"> <cellValueFactory><PropertyValueFactory property="expressionString" /></cellValueFactory></TableColumn>
-        </columns>
-      </TableView>
       <Button fx:id="drawExpression" layoutX="679.0" layoutY="529.0" mnemonicParsing="false" text="Draw" />
-      <LineChart layoutX="61.0" layoutY="61.0" fx:id="graphDisplayer">
+      <LineChart fx:id="graphDisplayer" layoutX="61.0" layoutY="61.0">
         <xAxis>
-          <NumberAxis side="BOTTOM" lowerBound="-100" upperBound="100" />
+          <NumberAxis lowerBound="-100" side="BOTTOM" upperBound="100" />
         </xAxis>
         <yAxis>
-          <NumberAxis side="LEFT" lowerBound="-100" upperBound="100" />
+          <NumberAxis lowerBound="-100" side="LEFT" upperBound="100" />
         </yAxis>
       </LineChart>
+      <TableView fx:id="expressionsTable" id="expressionsTable" layoutX="582.0" layoutY="78.0" prefHeight="367.0" prefWidth="256.0">
+        <columns>
+          <TableColumn prefWidth="104.0" text="Function name"><cellValueFactory><PropertyValueFactory property="description" /></cellValueFactory></TableColumn>
+            <TableColumn minWidth="0.0" prefWidth="151.0" text="Expression"><cellValueFactory><PropertyValueFactory property="expressionString" /></cellValueFactory></TableColumn>
+        </columns>
+      </TableView>
+      <Button layoutX="642.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Delete selected row" />
    </children>
 </AnchorPane>
