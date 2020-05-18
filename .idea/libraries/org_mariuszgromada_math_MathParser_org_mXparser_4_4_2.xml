@@ -2,9 +2,13 @@
   <library name="org.mariuszgromada.math:MathParser.org-mXparser:4.4.2" type="repository">
     <properties maven-id="org.mariuszgromada.math:MathParser.org-mXparser:4.4.2" />
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/mariuszgromada/math/MathParser.org-mXparser/4.4.2/MathParser.org-mXparser-4.4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/MathParser.org-mXparser-4.4.2.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/MathParser.org-mXparser-4.4.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/MathParser.org-mXparser-4.4.2-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
