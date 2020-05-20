@@ -29,6 +29,6 @@
             <TableColumn minWidth="0.0" prefWidth="151.0" text="Expression"><cellValueFactory><PropertyValueFactory property="functionExpression" /></cellValueFactory></TableColumn>
         </columns>
       </TableView>
-      <Button layoutX="642.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Delete selected row" />
+      <Button fx:id="removeSelectedRow" layoutX="642.0" layoutY="449.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Delete selected row" />
    </children>
 </AnchorPane>
