@@ -15,7 +15,6 @@ public class Main extends Application {
         primaryStage.setTitle("L'autre calculatrice");
         primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();
-
     }
 
 
