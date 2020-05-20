@@ -36,7 +36,7 @@ public class Controller implements Initializable {
 
 
         Argument x = new Argument("x");
-        mXparser.setDegreesMode();
+        mXparser.setRadiansMode();
         ArrayList<Double> resultsList = new ArrayList();
         ArrayList<Function> expressionsList = new ArrayList<Function>();
         ArrayList<Double> normalizedPoints = new ArrayList<Double>();
@@ -45,10 +45,12 @@ public class Controller implements Initializable {
         drawExpression.setOnAction(new EventHandler<ActionEvent>(){
             @Override
             public void handle(ActionEvent actionEvent) {
-                String[] splitTextArea = equationDisplayer.getText().split("");
+                String[] splitTextArea = equationDisplayer.getText().split(" ");
 
                 if(equationDisplayer.getText().contains("x")) {
+
                     Function f = new Function(equationDisplayer.getText());
+
 
                     Expression e = new Expression(equationDisplayer.getText());
                     ArrayList<Token> tokens = (ArrayList<Token>) e.getCopyOfInitialTokens();
@@ -58,17 +60,20 @@ public class Controller implements Initializable {
 
                     if (tokens.get(5).tokenId == -1){
                         for(int j = 5; j < tokens.size(); j++) {
-                            for (int i = 0; i < expressionsList.size() ; i++) {
-                                if (tokens.get(j).tokenStr.equals(expressionsList.get(i).getFunctionName())) {
-                                    newExpression.append(expressionsList.get(i).getFunctionExpressionString() + " ");
-                                    if(j + 4 < tokens.size()){
-                                        newExpression.append(tokens.get(j+4).tokenStr);
+                            for (Function function : expressionsList) {
+                                if (tokens.get(j).tokenStr.equals(function.getFunctionName())) {
+                                    newExpression.append(function.getFunctionExpressionString() + " ");
+                                    if (j + 4 < tokens.size()) {
+                                        newExpression.append(tokens.get(j + 4).tokenStr);
                                     }
                                 }
                             }
                         }
                         f = new Function(newExpression.toString());
                     }
+
+
+
 
                     UserDefinedFunction function = new UserDefinedFunction(f.getFunctionName(), f.getFunctionExpressionString());
                     expressionsList.add(f);
@@ -80,21 +85,19 @@ public class Controller implements Initializable {
 
                     int iMax = 0;
 
-                    for (int i = -200; i <= 200; i++) {
+                    for (int i = -20; i <= 20; i++) {
                         if(f.calculate(i) > -10 && f.calculate(i) < 10) {
                             resultsList.add(f.calculate(i));
                             iMax = i;
                         }
                     }
 
-                    System.out.println(f.getFunctionExpressionString());
-
                     if(resultsList.size() < 401){
-                        for(float k = -iMax; k <= iMax; k += (resultsList.get(resultsList.size()-1)/400)){
+                        for(float k = -iMax; k <= iMax; k += (resultsList.get(resultsList.size()-1)/20)){
                             Expression normalizePointsNumber = new Expression(f.getFunctionName() + "(" + Float.toString(k) + ")", f);
                             if(!Double.toString(normalizePointsNumber.calculate()).equals("NaN")) {
                                 normalizedPoints.add(normalizePointsNumber.calculate());
-                                System.out.println(normalizedPoints.get(j));
+
                                 drawFunction.getData().add(new XYChart.Data<Double, Double>(Double.parseDouble(Float.toString(k)), Double.parseDouble(normalizedPoints.get(j).toString())));
                                 j++;
                             }
@@ -143,30 +146,38 @@ public class Controller implements Initializable {
             if(keyEvent.getCode() == KeyCode.ENTER){
                 keyEvent.consume();
 
-                String[] splitTextArea = equationDisplayer.getText().split("");
+                String[] splitTextArea = equationDisplayer.getText().split(" ");
 
                 if(equationDisplayer.getText().contains("x")) {
+
                     Function f = new Function(equationDisplayer.getText());
+
 
                     Expression e = new Expression(equationDisplayer.getText());
                     ArrayList<Token> tokens = (ArrayList<Token>) e.getCopyOfInitialTokens();
+
+                    System.out.print(equationDisplayer.getText());
 
                     StringBuffer newExpression = new StringBuffer();
                     newExpression.append(f.getFunctionName() + "(x) =");
 
                     if (tokens.get(5).tokenId == -1){
                         for(int j = 5; j < tokens.size(); j++) {
-                            for (int i = 0; i < expressionsList.size() ; i++) {
-                                if (tokens.get(j).tokenStr.equals(expressionsList.get(i).getFunctionName())) {
-                                    newExpression.append(expressionsList.get(i).getFunctionExpressionString() + " ");
-                                    if(j + 4 < tokens.size()){
-                                        newExpression.append(tokens.get(j+4).tokenStr);
+                            for (Function function : expressionsList) {
+                                if (tokens.get(j).tokenStr.equals(function.getFunctionName())) {
+                                    newExpression.append(function.getFunctionExpressionString() + " ");
+                                    if (j + 4 < tokens.size()) {
+                                        newExpression.append(tokens.get(j + 4).tokenStr);
                                     }
                                 }
                             }
                         }
+                        System.out.print(newExpression.toString());
                         f = new Function(newExpression.toString());
                     }
+
+                    System.out.print(f.getFunctionExpressionString());
+
 
                     UserDefinedFunction function = new UserDefinedFunction(f.getFunctionName(), f.getFunctionExpressionString());
                     expressionsList.add(f);
@@ -178,21 +189,19 @@ public class Controller implements Initializable {
 
                     int iMax = 0;
 
-                    for (int i = -200; i <= 200; i++) {
+                    for (int i = -20; i <= 20; i++) {
                         if(f.calculate(i) > -10 && f.calculate(i) < 10) {
                             resultsList.add(f.calculate(i));
                             iMax = i;
                         }
                     }
 
-                    System.out.println(f.getFunctionExpressionString());
-
                     if(resultsList.size() < 401){
-                        for(float k = -iMax; k <= iMax; k += (resultsList.get(resultsList.size()-1)/400)){
+                        for(float k = -iMax; k <= iMax; k += (resultsList.get(resultsList.size()-1)/20)){
                             Expression normalizePointsNumber = new Expression(f.getFunctionName() + "(" + Float.toString(k) + ")", f);
                             if(!Double.toString(normalizePointsNumber.calculate()).equals("NaN")) {
                                 normalizedPoints.add(normalizePointsNumber.calculate());
-                                System.out.println(normalizedPoints.get(j));
+
                                 drawFunction.getData().add(new XYChart.Data<Double, Double>(Double.parseDouble(Float.toString(k)), Double.parseDouble(normalizedPoints.get(j).toString())));
                                 j++;
                             }
