@@ -4,7 +4,7 @@ public class UserDefinedFunction {
     protected String functionName;
     protected String functionExpression;
 
-    public UserDefinedFunction(String name, String expression){
+    public UserDefinedFunction(String name, String expression) {
         setFunctionName(name);
         setFunctionExpression(expression);
     }

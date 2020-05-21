@@ -36,6 +36,7 @@ public class Controller implements Initializable {
 
 
         Argument x = new Argument("x");
+        //set degrees mode for trigo
         mXparser.setDegreesMode();
         ArrayList<Double> resultsList = new ArrayList();
         ArrayList<Function> expressionsList = new ArrayList<Function>();
