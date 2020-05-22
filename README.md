@@ -2,7 +2,7 @@
 
 Our Java Calculator
 
-![App wiew](AppCapture.jpg)
+![App wiew](./AppCapture.JPG)
 
 We have 3 different sections in our app:
 
