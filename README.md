@@ -2,7 +2,7 @@
 
 Our Java Calculator
 
-![image-20200522172211922](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20200522172211922.png)
+![Wiew](D:\JavaWorkspace\l-autre-calculatrice\Untitled.png)
 
 We have 3 different sections in our app:
 
@@ -13,11 +13,9 @@ We have 3 different sections in our app:
 ​	-Equation Display : Where you can compute your functions
 
 <h2>Application use</h2>
-
 functionName(x) = expression
 
 <h3>What can we put in our expressions?</h3>
-
 By the use of mXparser, a lot of mathematical functions are usable :  http://mathparser.org/mxparser-math-collection/ 
 
 - Basic Operators : + , - , * , /
