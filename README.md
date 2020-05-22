@@ -2,7 +2,7 @@
 
 Our Java Calculator
 
-![App wiew](Untilted)
+![App wiew](Untilted.png)
 
 We have 3 different sections in our app:
 
