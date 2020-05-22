@@ -2,7 +2,7 @@
 
 Our Java Calculator
 
-![image-20200522172211922](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20200522172211922.png)
+![App wiew](Untilted)
 
 We have 3 different sections in our app:
 
