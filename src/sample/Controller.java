@@ -83,7 +83,7 @@ public class Controller implements Initializable {
                     ArrayList<Token> tokens = (ArrayList<Token>) e.getCopyOfInitialTokens();
 
                     //This StringBuffer will be used as our new String which will be given as argument of the f
-                    //constructor in case the expression's tokens match the texs below.
+                    //constructor in case the expression's tokens match the text below.
                     StringBuilder newExpression = new StringBuilder();
                     newExpression.append(f.getFunctionName()).append("(x) =");
 
@@ -112,6 +112,13 @@ public class Controller implements Initializable {
                                     //tokens after, the 3 remaining tokens after the function call being '(', 'arg' and
                                     //')'
                                     //If there is something, we append it to our String.
+                                    if (j + 4 < tokens.size()) {
+                                        newExpression.append(tokens.get(j + 4).tokenStr);
+                                    }
+                                }
+                                if (tokens.get(j).tokenStr.equals(function.getFunctionName()+"'"))
+                                {
+                                    newExpression.append("der(" + function.getFunctionExpressionString() + ",x) ");
                                     if (j + 4 < tokens.size()) {
                                         newExpression.append(tokens.get(j + 4).tokenStr);
                                     }
@@ -339,7 +346,7 @@ public class Controller implements Initializable {
                     ArrayList<Token> tokens = (ArrayList<Token>) e.getCopyOfInitialTokens();
 
                     //This StringBuffer will be used as our new String which will be given as argument of the f
-                    //constructor in case the expression's tokens match the texs below.
+                    //constructor in case the expression's tokens match the text below.
                     StringBuilder newExpression = new StringBuilder();
                     newExpression.append(f.getFunctionName()).append("(x) =");
 
@@ -372,6 +379,14 @@ public class Controller implements Initializable {
                                         newExpression.append(tokens.get(j + 4).tokenStr);
                                     }
                                 }
+                                // If our function is a derivative with '
+                                if (tokens.get(j).tokenStr.equals(function.getFunctionName()+"'"))
+                                {
+                                    newExpression.append("der(" + function.getFunctionExpressionString() + ",x) ");
+                                    if (j + 4 < tokens.size()) {
+                                        newExpression.append(tokens.get(j + 4).tokenStr);
+                                    }
+                                }
                             }
                         }
 
@@ -387,7 +402,7 @@ public class Controller implements Initializable {
                     //Updating expression database and interface |
                     //--------------------------------------------
 
-                    //We created a new USerDefinedFunction Class so it is way easier to send information to our JavaFX
+                    //We created a new UserDefinedFunction Class so it is way easier to send information to our JavaFX
                     //TableView.
                     UserDefinedFunction function = new UserDefinedFunction(f.getFunctionName(), f.getFunctionExpressionString());
 
