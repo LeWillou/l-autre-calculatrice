@@ -2,7 +2,11 @@
 
 Our Java Calculator
 
+<<<<<<< HEAD
 ![Wiew](D:\JavaWorkspace\l-autre-calculatrice\Untitled.png)
+=======
+![App wiew](Untilted.png)
+>>>>>>> master
 
 We have 3 different sections in our app:
 
